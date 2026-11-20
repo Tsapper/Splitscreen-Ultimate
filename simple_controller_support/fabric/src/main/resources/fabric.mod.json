@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "simple_controller_support",
+  "version": "${version}",
+  "name": "Simple Controller Support",
+  "description": "Controller support with a virtual cursor for menus and rebindable controller controls for vanilla and modded key bindings.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/simple_controller_support/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "tsapper.simple_controller_support.fabric.SimpleControllerSupportModFabric"
+    ],
+    "client": [
+      "tsapper.simple_controller_support.fabric.client.SimpleControllerSupportModFabricClient"
+    ]
+  },
+  "mixins": [
+    "simple_controller_support.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.11",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

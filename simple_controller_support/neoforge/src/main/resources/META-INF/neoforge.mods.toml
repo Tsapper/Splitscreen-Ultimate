@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "simple_controller_support"
+version = "${version}"
+displayName = "Simple Controller Support"
+authors = "Me!"
+description = '''
+Controller support with a virtual cursor for menus and rebindable controller controls for vanilla and modded key bindings.
+'''
+#logoFile = ""
+
+[[dependencies.simple_controller_support]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simple_controller_support]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simple_controller_support]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.11,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "simple_controller_support.mixins.json"

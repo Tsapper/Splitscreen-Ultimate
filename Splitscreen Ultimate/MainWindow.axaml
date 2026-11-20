@@ -1,0 +1,16 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Splitscreen_Ultimate"
+        x:Class="Splitscreen_Ultimate.MainWindow"
+        Title="Splitscreen Launcher"
+        Width="1280" Height="720">
+    <Grid RowDefinitions="Auto,*">
+        <TextBlock x:Name="SessionStatus" Margin="8,4" Text="Starting player one…"/>
+        <Canvas x:Name="Surface" Grid.Row="1" ClipToBounds="True">
+            <local:MinecraftHost x:Name="Host1" Width="960" Height="540" Canvas.Left="-10000"/>
+            <local:MinecraftHost x:Name="Host2" Width="960" Height="540" Canvas.Left="-10000"/>
+            <local:MinecraftHost x:Name="Host3" Width="960" Height="540" Canvas.Left="-10000"/>
+            <local:MinecraftHost x:Name="Host4" Width="960" Height="540" Canvas.Left="-10000"/>
+        </Canvas>
+    </Grid>
+</Window>

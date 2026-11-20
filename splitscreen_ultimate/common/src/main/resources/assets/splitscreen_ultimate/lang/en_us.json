@@ -1,0 +1,9 @@
+{
+  "splitscreen_ultimate.join": "Press A on another controller to join (up to 4)",
+  "splitscreen_ultimate.claim_main": "Press A to claim player one’s controller",
+  "splitscreen_ultimate.retry": "Retry guests",
+  "splitscreen_ultimate.counts": "Launched %s/4 | Ready %s | In world %s",
+  "splitscreen_ultimate.player_status": "Player %s: %s",
+  "splitscreen_ultimate.join_failed": "Could not join host world",
+  "splitscreen_ultimate.controller_disconnected": "Controller disconnected — press A to reconnect"
+}

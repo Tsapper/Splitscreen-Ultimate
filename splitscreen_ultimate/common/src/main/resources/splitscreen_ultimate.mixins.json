@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "tsapper.splitscreen_ultimate.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "WindowMixin",
+    "MinecraftSessionMixin",
+    "IntegratedServerMixin",
+    "IntegratedServerAccessor",
+    "PauseScreenMixin",
+    "ShareToLanScreenMixin",
+    "TitleScreenMixin",
+    "ConnectionAccessor",
+    "ServerLoginMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

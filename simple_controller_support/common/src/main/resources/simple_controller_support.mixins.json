@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "package": "tsapper.simple_controller_support.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "AbstractContainerScreenAccessor",
+    "AbstractSelectionListAccessor",
+    "CreativeModeInventoryScreenAccessor",
+    "GameRendererMixin",
+    "InputConstantsMixin",
+    "KeyboardHandlerMixin",
+    "KeyboardInputMixin",
+    "KeyMappingAccessor",
+    "MinecraftMixin",
+    "MouseHandlerMixin",
+    "OptionsSubScreenAccessor",
+    "RecipeBookComponentAccessor",
+    "RecipeBookPageAccessor"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

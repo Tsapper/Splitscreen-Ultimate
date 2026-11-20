@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "splitscreen_ultimate",
+  "version": "${version}",
+  "name": "Splitscreen Ultimate",
+  "description": "Client-side foundation for coordinating local splitscreen Minecraft instances.",
+  "authors": [
+    "tsapper"
+  ],
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "tsapper.splitscreen_ultimate.fabric.SplitscreenUltimateModFabric"
+    ],
+    "client": [
+      "tsapper.splitscreen_ultimate.fabric.client.SplitscreenUltimateModFabricClient"
+    ]
+  },
+  "mixins": [
+    "splitscreen_ultimate.mixins.json"
+  ],
+  "depends": {
+    "simple_controller_support": ">=1.1.0 <2.0.0",
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.11",
+    "fabric-api": "*"
+  }
+}

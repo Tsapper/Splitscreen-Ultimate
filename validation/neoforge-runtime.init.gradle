@@ -1,0 +1,6 @@
+allprojects {
+    tasks.withType(JavaExec).configureEach {
+        executable = new File(rootProject.projectDir, '../Splitscreen Ultimate/minecraft/runtime/windows-x64/java-runtime-delta/bin/java.exe').absolutePath
+        jvmArgs '-Dsplitscreen.loaderCheck=true'
+    }
+}

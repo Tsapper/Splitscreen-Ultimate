@@ -1,0 +1,38 @@
+# Build outputs and caches
+**/bin/
+**/obj/
+**/build/
+**/out/
+**/.gradle/
+**/.architectury-transformer/
+
+# IDE and machine-local settings
+**/.idea/
+**/.vs/
+**/.vscode/
+*.iml
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+
+# Minecraft downloads, development runs, saves, and player data
+**/run/
+/Splitscreen Ultimate/minecraft/
+/Splitscreen Ultimate/player[1-4]/
+*.log
+hs_err_pid*
+replay_pid*
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Local agent configuration
+/.agents/
+/.codex/

@@ -1,0 +1,44 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "CC0-1.0"
+
+[[mods]]
+modId = "splitscreen_ultimate"
+version = "${version}"
+displayName = "Splitscreen Ultimate"
+authors = "tsapper"
+description = '''
+Client-side foundation for coordinating local splitscreen Minecraft instances.
+'''
+
+[[dependencies.splitscreen_ultimate]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.splitscreen_ultimate]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.splitscreen_ultimate]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.11,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[mixins]]
+config = "splitscreen_ultimate.mixins.json"
+
+[[dependencies.splitscreen_ultimate]]
+modId = "simple_controller_support"
+type = "required"
+versionRange = "[1.1.0,2.0.0)"
+ordering = "AFTER"
+side = "CLIENT"
+
